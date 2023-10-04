@@ -51,10 +51,10 @@ function Intro() {
             }}>
             <Link href="#contact" className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
             outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me below <BsArrowDown/></Link>
-            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-900 active:scale-105 transition hover:text-gray-50'>
+            <a href='https://www.linkedin.com/in/abdulkadir-maxamed/' target='_blank' className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-900 active:scale-105 transition hover:text-gray-50'>
                 <BsLinkedin/>
             </a>
-            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none hover:scale-110 hover:bg-gray-900 active:scale-105 transition hover:text-gray-50'>
+            <a href='https://github.com/hackerAbdul' target='_blank' className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none hover:scale-110 hover:bg-gray-900 active:scale-105 transition hover:text-gray-50'>
                 <FaGithubSquare/>
             </a>
         </motion.div>
