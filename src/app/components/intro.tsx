@@ -9,8 +9,8 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 '>
-        <div className="flex items-center justify-center">
+    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+        <div className="flex items-center justify-center scroll-mt-[100rem]" id='home'>
             <div className='relative'>
                 <motion.div initial={{ opacity:0, scale:0 }} animate={{ opacity:1, scale:1 }} transition={{ type: "tween", duration: 0.2}}>
                     <Image src='https://media.licdn.com/dms/image/C4D03AQEHWxSdWgEI-A/profile-displayphoto-shrink_800_800/0/1573082689813?e=1701907200&v=beta&t=AbzUmt0UTMYy6zDrDP7pxsL1IuBAGWdX9fcn5pvxfYk' 
