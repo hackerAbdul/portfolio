@@ -1,15 +1,16 @@
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { links } from '../lib/data'
 import Link from 'next/link'
-import { type } from 'os'
+import {useCurrentSectionContext} from '../../../context/active-section'
 
 function Header() {
     
-    const [currentSection, setCurrentSection] = useState('Home')
+    const { currentSection, setCurrentSection } = useCurrentSectionContext()
+    
 
   return (
     <header className='z-[999] relative'>

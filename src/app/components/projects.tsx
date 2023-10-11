@@ -1,17 +1,33 @@
 "use client"
 
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import SectionHeadings from './section-headings'
 import { projectsData } from '../lib/data'
 import { useScroll, useTransform } from 'framer-motion'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useCurrentSectionContext } from '../../../context/active-section'
 
 function Projects() {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5
+      });
+
+    const { setCurrentSection } = useCurrentSectionContext()
+
+    useEffect(() =>{
+        if (inView){
+        setCurrentSection("Projects")
+        }
+    }, [inView, setCurrentSection])
+
   return (
-    <section id='projects' className='scroll-mt-28'>
+    <section ref={ref} id='projects' className='scroll-mt-28'>
         <SectionHeadings 
             subtitle='Projects'
         />
+        
         <div>
             {projectsData.map((project, index) =>(
                 <Project 
