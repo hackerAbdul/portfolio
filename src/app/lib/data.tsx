@@ -58,24 +58,38 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "theSupplications",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Next.js", "Tailwind", "Framer"],
     // imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "OSC",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["Javascript", "Express.js", "MongoDB", "REST API", "Jest"],
+    // imageUrl: corpcommentImg,
+  },
+  {
+    title: "theNames",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "Next.js", "Tailwind", "Redux", "Figma", "REST API", "Jest"],
     // imageUrl: rmtdevImg,
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["Java", "SpringBoot", "Cucumber", "Integration", "AWS"],
+    // imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Weather App",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "OpenWeathMap API", "Jest"]
     // imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -90,14 +104,11 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "REST API",
+  "Unix",
+  "Java",
+  "PL/SQL",
+  "SQL"
 ] as const;
